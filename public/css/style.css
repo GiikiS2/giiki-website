@@ -130,6 +130,7 @@ body {
 
 .active {
   transform: scale(1.2) !important;
+  box-shadow: 0 0px 25px #0000009f !important;
 }
 
   
