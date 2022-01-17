@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.icon-p{
+    width: 150px;
+    border-radius: 100%;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0px 0px 13px 1px #000000a6;
+}
+
+.header h1:after{ 
+    content: "";
+    background: url('https://image.flaticon.com/icons/png/512/867/867875.png') no-repeat;
+    top: 500px;
+    right: 0px;
+    width: 8%;
+    height: 8%;
+    background-size: contain;
+}
+
+.navbar {
+    background-color: rgb(142, 191, 255);
+    background: linear-gradient(0deg, rgb(96, 152, 255) 0%, rgb(63, 153, 255) 100%);
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    font-family: 'Dongle', sans-serif;
+    box-shadow: 0px 0px 13px 1px #000000a6;
+  }
+  
+.item-n {
+    font-size: 25px;
+    float: left;
+    display: block;
+    padding: 6px 20px 0px;
+    transition: all 0.35s ease-in-out;
+  }
+
+.item-n a{
+    text-shadow: 0 0 8px #0000005d;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+.item-n:hover {
+    background-color: rgba(17, 17, 17, 0.24);
+  }
+
+.box {
+    animation: gradient 60s ease infinite;
+    position: relative;
+    padding: 0 0 0 0;
+    background-color: rgb(48, 113, 211);
+    background-image: url(../assets/site_bg.png);
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+
+.container-l{
+    margin-top: -40px;
+    background-color: #273036; 
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    position: relative;
+}
+
+.container-l h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.header {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.header h1{
+    margin: 10px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #120a1c; 
+}
+
+.desc{
+    margin: auto;
+    padding: 10px;
+    max-width: 250px;
+}
+
+  * {
+    scrollbar-width: 8px;
+    scrollbar-color: #273036 rgb(48, 113, 211);
+  }
+  
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #273036;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(48, 113, 211);
+  }
+
+  
+.card {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px;
+    box-shadow: 0 0px 25px #1a1a1a44;
+    margin: 20px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.337);
+    transition: all 0.5s;
+    word-break: keep-all;
+    height: auto;
+    background-image: url(../assets/bg.svg);
+}
+
+.card a{
+    color: rgb(188, 236, 255);
+}
+
+.footer a{
+    color: rgb(188, 236, 255);
+    margin: 10px;
+}
+
+.card h1{
+    font-size: 25px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	99.9% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.grid{
+    justify-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.gallery {
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.438);
+    margin: 5px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    transition: all 0.5s;
+  }
+
+  .g-name{
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+
+  .g-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+  }
+
+.card-s{
+    text-align: center;
+    margin: 8px;
+}
+
+.icon-s{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 20px;
+    transition: all 0.35s ease-in-out;
+    position: relative;
+}
+
+.icon-s:hover{
+    color: rgba(255, 255, 255, 0.891);
+    font-size: 24px;
+}
+
+.fit{
+    object-fit: cover; height: 300px;
+}
