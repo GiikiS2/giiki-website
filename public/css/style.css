@@ -128,8 +128,13 @@ body {
     background-color: rgb(48, 113, 211);
   }
 
+.active {
+  transform: scale(1.2) !important;
+}
+
   
 .card {
+    transition: all 0.35s ease-in-out;
     text-align: center;
     padding: 5px;
     padding-bottom: 15px;
@@ -138,7 +143,6 @@ body {
     width: 270px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.337);
-    transition: all 0.5s;
     word-break: keep-all;
     height: auto;
     background-image: url(../assets/bg.svg);

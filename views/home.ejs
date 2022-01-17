@@ -28,7 +28,7 @@
         <a href="#sobre-mim"><i class="fas fa-user"></i> Sobre mim</a>
       </li>
       <li class="item-n">
-        <a href="#sobre-mim"><i class="fas fa-folder"></i> Projetos</a>
+        <a href="#sobre-mim" onclick="active()"><i class="fas fa-folder"></i> Projetos</a>
       </li>
       <li class="item-n">
         <a href="#arts"><i class="fas fa-paint-brush"></i> Artes</a>
@@ -80,7 +80,7 @@
         <p>Desenhar, ouvir música, programar e conversar/jogar com meus amigos :)</p>
       </div>
 
-      <div class="card" data-aos="zoom-in">
+      <div class="card" id="projetos" data-aos="zoom-in">
         <h1><i class="fas fa-folder"></i> Projetos </h1>
         <p><a href="https://belinha.herokuapp.com">Belinha bot.</a></p>
       </div>
@@ -98,13 +98,13 @@
       </div>
     </div>
   </div>
-  <div id="arts" class="container-l" style="background-color: #8409ff; margin-top: -10px;">
+  <div class="container-l" style="background-color: #8409ff; margin-top: -10px;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#273036" fill-opacity="1"
         d="M0,192L48,192C96,192,192,192,288,176C384,160,480,128,576,128C672,128,768,160,864,176C960,192,1056,192,1152,186.7C1248,181,1344,171,1392,165.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
       </path>
     </svg>
-    <h3>Artes</h3>
+    <h3 id="arts" >Artes</h3>
     <div class="grid tripla">
       <div class="gallery" data-aos="zoom-in">
         <img src="https://media.discordapp.net/attachments/749839884591693836/802747965587718144/thumb_d_roca_ep_3.png"
@@ -133,13 +133,13 @@
     </div>
 
   </div>
-  <div id="giikilove" class="container-l" style="background-color: rgb(255, 50, 105); margin-top: -10px;">
+  <div class="container-l" style="background-color: rgb(255, 50, 105); margin-top: -10px;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#8409ff" fill-opacity="1"
         d="M0,160L48,186.7C96,213,192,267,288,272C384,277,480,235,576,213.3C672,192,768,192,864,170.7C960,149,1056,107,1152,122.7C1248,139,1344,213,1392,250.7L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
       </path>
     </svg>
-    <h3> Parte do site dedicada a meus amigos <3 </h3>
+    <h3 id="giikilove"> Parte do site dedicada a meus amigos <3 </h3>
 
         <div class="grid tripla">
           <div class="gallery" data-aos="zoom-in">
@@ -198,6 +198,16 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    function active(){
+      let card = document.getElementById("projetos");
+      card.classList.add("active");
+
+      const myTimeout = setTimeout(task, 2000);
+      function task(){
+        card.classList.remove("active");
+      }
+    }
   </script>
 </body>
 
