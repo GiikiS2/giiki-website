@@ -283,3 +283,33 @@ body {
     width: 70%;
   }
 }
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.image-user {
+  transform: translatey(0px);
+}
+
+.image-user:after {
+  animation: float 6s ease-in-out infinite;
+  position: fixed;
+  content: "";
+  background: url(../assets/fakelove-s.webp) no-repeat;
+  top: 120px;
+  right: 20px;
+  width: 25%;
+  height: 25%;
+  background-size: contain;
+  filter: drop-shadow(0px 0px 20px #ff0346);
+  animation: float 10s ease-in-out infinite;
+}
