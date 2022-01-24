@@ -3,7 +3,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2"
   },
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
