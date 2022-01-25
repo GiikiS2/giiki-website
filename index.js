@@ -11,7 +11,7 @@ app.use(express.urlencoded({
 }))
 
 app.get("*", async function (req, res) {
-    res.render("/home.ejs", {});
+    res.render("/pag/home.ejs", {});
 });
 
 const server = app.listen(process.env.PORT || 1370, () => {
