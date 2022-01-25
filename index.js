@@ -10,7 +10,9 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-app.get('/', (req, res) => res.send('Home Page Route'));
+app.get("*", async function (req, res) {
+    res.render("home.ejs", {});
+});
 
 const server = app.listen(process.env.PORT || 1370, () => {
     const port = server.address().port;
