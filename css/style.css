@@ -180,6 +180,9 @@ body {
     display: flex;
     padding: 10px;
 }
+.child {
+  flex: 1 0 21%; /* explanation below */
+}
 
 .flex-container {
   display: flex;
