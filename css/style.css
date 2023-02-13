@@ -176,9 +176,11 @@ body {
 }
 
 .grid{
-    justify-items: center;
-    display: flex;
-    padding: 10px;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 .child {
   flex: 1 0 21%; /* explanation below */
