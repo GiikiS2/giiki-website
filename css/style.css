@@ -181,6 +181,15 @@ body {
     padding: 10px;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
 .tripla{
   grid-template-columns: auto auto auto;
 }
