@@ -184,6 +184,7 @@ body {
 }
 .child {
   flex: 1 0 21%; /* explanation below */
+  max-width: 250px;
 }
 
 .flex-container {
