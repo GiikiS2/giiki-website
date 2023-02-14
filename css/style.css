@@ -188,6 +188,8 @@ body {
 }
 
 .flex-container {
+  margin-right: 100px;
+  margin-left: 100px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
